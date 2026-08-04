@@ -17,13 +17,15 @@ export default function ContactoPage() {
           </p>
           <div className="space-y-6">
             <a
-              href="mailto:contacto@tadeoandrada.com"
+              href="mailto:andradatadeo98@gmail.com"
               className="block text-lg hover:text-muted transition-colors"
             >
-              contacto@tadeoandrada.com
+              andradatadeo98@gmail.com
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/tadeoandrada/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block text-lg hover:text-muted transition-colors"
             >
               Instagram ↗

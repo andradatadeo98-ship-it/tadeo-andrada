@@ -4,13 +4,15 @@ export default function Footer() {
       <span className="text-base">Tadeo Andrada</span>
       <div className="flex gap-8">
         <a
-          href="mailto:contacto@tadeoandrada.com"
+          href="mailto:andradatadeo98@gmail.com"
           className="text-sm text-muted hover:text-ink transition-colors"
         >
           Correo
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/tadeoandrada/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-sm text-muted hover:text-ink transition-colors"
         >
           Instagram
