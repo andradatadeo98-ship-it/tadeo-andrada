@@ -24,52 +24,31 @@ export default function ObraPage({ params }: { params: { slug: string } }) {
   return (
     <>
       <Nav />
-      <section className="pt-40 md:pt-48 px-6 md:px-24 pb-24 grid grid-cols-1 md:grid-cols-12 gap-12">
-        <Reveal className="md:col-span-8">
+      <section className="pt-40 md:pt-48 px-6 md:px-24 pb-24">
+        <Reveal className="max-w-[720px] md:ml-[16.6%]">
           <ObraViewer obra={obra} />
-        </Reveal>
 
-        <Reveal className="md:col-span-4 border-t md:border-t-0 md:border-l border-line pt-8 md:pt-0 md:pl-12">
-          <dl className="space-y-6">
-            <div>
+          {/* Caption debajo de la foto: título, técnica y medidas —
+              lo que define a la obra a simple vista, sin ir a buscarlo
+              a un costado. */}
+          <div className="mt-6 pb-6 border-b border-line">
+            <h1 className="text-lg">
+              {obra.titulo}
+              {obra.serie ? `, ${obra.serie}` : ""}, {obra.anio}
+            </h1>
+            <p className="text-sm text-muted mt-1">
+              {obra.tecnica} · {obra.medidas}
+            </p>
+          </div>
+
+          {obra.disponibilidad && (
+            <div className="mt-6">
               <dt className="text-xs uppercase tracking-widest text-muted mb-1">
-                Título
+                Disponibilidad
               </dt>
-              <dd className="text-base">{obra.titulo}</dd>
+              <dd className="text-base">{obra.disponibilidad}</dd>
             </div>
-            <div>
-              <dt className="text-xs uppercase tracking-widest text-muted mb-1">
-                Año
-              </dt>
-              <dd className="text-base">{obra.anio}</dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-widest text-muted mb-1">
-                Técnica
-              </dt>
-              <dd className="text-base">{obra.tecnica}</dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-widest text-muted mb-1">
-                Medidas
-              </dt>
-              <dd className="text-base">{obra.medidas}</dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-widest text-muted mb-1">
-                Serie
-              </dt>
-              <dd className="text-base">{obra.serie}</dd>
-            </div>
-            {obra.disponibilidad && (
-              <div>
-                <dt className="text-xs uppercase tracking-widest text-muted mb-1">
-                  Disponibilidad
-                </dt>
-                <dd className="text-base">{obra.disponibilidad}</dd>
-              </div>
-            )}
-          </dl>
+          )}
         </Reveal>
       </section>
       <Footer />

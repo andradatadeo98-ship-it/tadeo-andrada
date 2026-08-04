@@ -25,20 +25,26 @@ export default function ObrasMosaic({ obras }: { obras: Obra[] }) {
             className={`col-span-1 ${layout.colSpan} ${layout.offset}`}
           >
             <Link href={`/obras/${obra.slug}`} className="group block">
+              {/* Paspartú + sombra proyectada: da la sensación de una
+                  obra montada en la pared, no una foto plana. */}
               <div
-                className="relative overflow-hidden rounded-sm bg-[#E4DCCB]"
-                style={{ aspectRatio: obra.aspectRatio }}
+                className="relative bg-cream p-3 md:p-4 shadow-[0_24px_40px_-20px_rgba(47,42,37,0.4)] transition-transform duration-500 ease-reveal group-hover:-translate-y-1"
               >
-                {obra.imagenes[0] && (
-                  <Image
-                    src={obra.imagenes[0]}
-                    alt={`${obra.titulo}, ${obra.anio}`}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                )}
-                <span className="absolute bottom-3 left-3 text-xs text-muted opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div
+                  className="relative overflow-hidden bg-[#E4DCCB]"
+                  style={{ aspectRatio: obra.aspectRatio }}
+                >
+                  {obra.imagenes[0] && (
+                    <Image
+                      src={obra.imagenes[0]}
+                      alt={`${obra.titulo}, ${obra.anio}`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  )}
+                </div>
+                <span className="block mt-2 text-xs text-muted opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {obra.titulo}, {obra.anio}
                 </span>
               </div>
