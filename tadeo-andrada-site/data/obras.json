@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "serie-2026-01",
+    "titulo": "Sin título",
+    "anio": 2026,
+    "tecnica": "Acrílico sobre lienzo",
+    "medidas": "98 × 98 cm",
+    "serie": "",
+    "disponibilidad": "A la venta",
+    "imagenes": ["/images/serie-2026-01.jpg"],
+    "aspectRatio": "1/1",
+    "destacada": true
+  },
+  {
+    "slug": "serie-2026-02",
+    "titulo": "Sin título",
+    "anio": 2026,
+    "tecnica": "Acrílico sobre lienzo",
+    "medidas": "94 × 81 cm",
+    "serie": "",
+    "disponibilidad": "A la venta",
+    "imagenes": ["/images/serie-2026-02.jpg"],
+    "aspectRatio": "94/81",
+    "destacada": true
+  },
+  {
+    "slug": "serie-2026-03",
+    "titulo": "Sin título",
+    "anio": 2026,
+    "tecnica": "Acrílico sobre lienzo",
+    "medidas": "63 × 63 cm",
+    "serie": "",
+    "disponibilidad": "A la venta",
+    "imagenes": ["/images/serie-2026-03.jpg"],
+    "aspectRatio": "1/1",
+    "destacada": true
+  },
+  {
+    "slug": "serie-2026-04",
+    "titulo": "Sin título",
+    "anio": 2026,
+    "tecnica": "Acrílico sobre lienzo",
+    "medidas": "92 × 90 cm",
+    "serie": "",
+    "disponibilidad": "A la venta",
+    "imagenes": ["/images/serie-2026-04.jpg"],
+    "aspectRatio": "46/45",
+    "destacada": true
+  },
+  {
+    "slug": "serie-2026-05",
+    "titulo": "Sin título",
+    "anio": 2026,
+    "tecnica": "Acrílico sobre lienzo",
+    "medidas": "66 × 66 cm",
+    "serie": "",
+    "disponibilidad": "A la venta",
+    "imagenes": ["/images/serie-2026-05.jpg"],
+    "aspectRatio": "1/1",
+    "destacada": true
+  },
+  {
+    "slug": "serie-2026-06",
+    "titulo": "Sin título",
+    "anio": 2026,
+    "tecnica": "Acrílico sobre lienzo",
+    "medidas": "82 × 82 cm",
+    "serie": "",
+    "disponibilidad": "A la venta",
+    "imagenes": ["/images/serie-2026-06.jpg"],
+    "aspectRatio": "1/1",
+    "destacada": true
+  },
+  {
+    "slug": "serie-2026-07",
+    "titulo": "Sin título",
+    "anio": 2026,
+    "tecnica": "Acrílico sobre lienzo",
+    "medidas": "75 × 75 cm",
+    "serie": "",
+    "disponibilidad": "A la venta",
+    "imagenes": ["/images/serie-2026-07.jpg"],
+    "aspectRatio": "1/1",
+    "destacada": true
+  },
+  {
+    "slug": "serie-2026-08",
+    "titulo": "Sin título",
+    "anio": 2026,
+    "tecnica": "Acrílico sobre lienzo",
+    "medidas": "98 × 98 cm",
+    "serie": "",
+    "disponibilidad": "A la venta",
+    "imagenes": ["/images/serie-2026-08.jpg"],
+    "aspectRatio": "1/1",
+    "destacada": true
+  }
+]
