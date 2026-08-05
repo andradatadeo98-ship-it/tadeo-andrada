@@ -4,6 +4,7 @@
 
 :root {
   --font-body: "General Sans", -apple-system, sans-serif;
+  --font-serif: "Newsreader", "Times New Roman", serif;
 }
 
 html {

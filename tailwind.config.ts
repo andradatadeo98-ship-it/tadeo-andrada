@@ -12,6 +12,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-body)", "sans-serif"],
+        serif: ["var(--font-serif)", "serif"],
       },
       transitionTimingFunction: {
         reveal: "cubic-bezier(0.16, 1, 0.3, 1)",

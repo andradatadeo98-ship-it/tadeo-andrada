@@ -24,25 +24,25 @@ export default function ObraPage({ params }: { params: { slug: string } }) {
   return (
     <>
       <Nav />
-      <section className="pt-40 md:pt-48 px-6 md:px-24 pb-24">
+      <section className="pt-40 md:pt-56 px-6 md:px-24 pb-32">
         <Reveal className="max-w-[720px] md:ml-[16.6%]">
           <ObraViewer obra={obra} />
 
           {/* Caption debajo de la foto: título, técnica y medidas —
               lo que define a la obra a simple vista, sin ir a buscarlo
               a un costado. */}
-          <div className="mt-6 pb-6 border-b border-line">
-            <h1 className="text-lg">
+          <div className="mt-8 pb-8 border-b border-line">
+            <h1 className="font-serif text-xl">
               {obra.titulo}
               {obra.serie ? `, ${obra.serie}` : ""}, {obra.anio}
             </h1>
-            <p className="text-sm text-muted mt-1">
+            <p className="text-sm text-muted mt-2">
               {obra.tecnica} · {obra.medidas}
             </p>
           </div>
 
           {obra.disponibilidad && (
-            <div className="mt-6">
+            <div className="mt-8">
               <dt className="text-xs uppercase tracking-widest text-muted mb-1">
                 Disponibilidad
               </dt>

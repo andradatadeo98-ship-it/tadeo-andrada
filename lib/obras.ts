@@ -9,6 +9,7 @@ export type Obra = {
   serie: string;
   disponibilidad?: string;
   imagenes: string[];
+  imagenMockup?: string;
   aspectRatio: string;
   destacada?: boolean;
 };

@@ -11,7 +11,8 @@
       "/images/serie-2026-01.jpg"
     ],
     "aspectRatio": "1/1",
-    "destacada": true
+    "destacada": true,
+    "imagenMockup": "/images/serie-2026-01-mockup.jpg"
   },
   {
     "slug": "serie-2026-02",
@@ -53,7 +54,8 @@
       "/images/serie-2026-04.jpg"
     ],
     "aspectRatio": "46/45",
-    "destacada": true
+    "destacada": true,
+    "imagenMockup": "/images/serie-2026-04-mockup.jpg"
   },
   {
     "slug": "serie-2026-05",
@@ -81,7 +83,8 @@
       "/images/serie-2026-06.jpg"
     ],
     "aspectRatio": "1/1",
-    "destacada": true
+    "destacada": true,
+    "imagenMockup": "/images/serie-2026-06-mockup.jpg"
   },
   {
     "slug": "serie-2026-07",
