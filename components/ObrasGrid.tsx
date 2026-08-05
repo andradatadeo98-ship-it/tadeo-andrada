@@ -10,7 +10,7 @@ import type { Obra } from "@/lib/obras";
 // visible debajo de cada imagen, nunca solo al pasar el cursor.
 export default function ObrasGrid({ obras }: { obras: Obra[] }) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20 md:gap-x-14 md:gap-y-28">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 md:gap-x-24 gap-y-28 md:gap-y-40">
       {obras.map((obra) => (
         <Reveal key={obra.slug}>
           <Link href={`/obras/${obra.slug}`} className="group block">
@@ -24,12 +24,12 @@ export default function ObrasGrid({ obras }: { obras: Obra[] }) {
                   alt={`${obra.titulo}, ${obra.anio}`}
                   fill
                   className="object-cover transition-opacity duration-700 ease-reveal group-hover:opacity-90"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               )}
             </div>
-            <div className="mt-5">
-              <p className="font-serif text-base">
+            <div className="mt-6">
+              <p className="font-serif text-sm text-ink/80">
                 {obra.titulo}, {obra.anio}
               </p>
               <p className="text-xs tracking-wide text-muted mt-1">

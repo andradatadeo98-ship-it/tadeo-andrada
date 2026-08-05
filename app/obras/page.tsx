@@ -14,9 +14,9 @@ export default function ObrasPage() {
   return (
     <>
       <Nav />
-      <section className="pt-40 md:pt-56 px-6 md:px-24 pb-40">
-        <Reveal className="mb-20 md:mb-28 md:ml-[8.3%]">
-          <p className="text-xs tracking-widest uppercase text-muted">
+      <section className="pt-48 md:pt-64 px-6 md:px-28 pb-48 md:pb-56">
+        <Reveal className="mb-24 md:mb-32 text-center">
+          <p className="text-[11px] tracking-[0.15em] uppercase text-muted">
             Obras — {obras.length} pieza{obras.length !== 1 ? "s" : ""}
           </p>
         </Reveal>

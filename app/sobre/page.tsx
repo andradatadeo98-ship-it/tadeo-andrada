@@ -26,16 +26,24 @@ export default function SobrePage() {
   return (
     <>
       <Nav />
-      <section className="pt-40 md:pt-56 px-6 md:px-24 pb-40">
-        <Reveal className="max-w-[640px] md:ml-[16.6%]">
-          <p className="text-xs tracking-widest uppercase text-muted mb-12">
+
+      {/* Sala 1: el texto curatorial, solo. Columna angosta para una
+          lectura cómoda, centrado como una pausa contemplativa. */}
+      <section className="min-h-screen flex items-center justify-center px-6">
+        <Reveal className="max-w-[560px] text-center">
+          <p className="text-[11px] tracking-[0.15em] uppercase text-muted mb-14">
             Sobre
           </p>
-          <p className="font-serif text-xl leading-[1.85] whitespace-pre-line mb-28">
+          <p className="font-serif text-xl leading-[1.85] whitespace-pre-line text-left">
             {textoCuratorialPlaceholder.trim()}
           </p>
+        </Reveal>
+      </section>
 
-          <p className="text-xs tracking-widest uppercase text-muted mb-12">
+      {/* Sala 2: la cronología, separada por completo de la anterior. */}
+      <section className="px-6 md:px-28 pb-48 md:pb-56">
+        <Reveal className="max-w-[560px] mx-auto">
+          <p className="text-[11px] tracking-[0.15em] uppercase text-muted mb-14">
             Cronología
           </p>
           <ul className="space-y-8">
@@ -53,6 +61,7 @@ export default function SobrePage() {
           </ul>
         </Reveal>
       </section>
+
       <Footer />
     </>
   );

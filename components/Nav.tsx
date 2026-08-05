@@ -22,18 +22,18 @@ export default function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 flex justify-end items-center px-6 md:px-24 py-8 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 flex justify-end items-center px-6 md:px-28 py-8 transition-all duration-700 ease-reveal ${
         visible
           ? "opacity-100 translate-y-0 pointer-events-auto"
           : "opacity-0 -translate-y-2 pointer-events-none"
       }`}
     >
-      <ul className="flex gap-10">
+      <ul className="flex gap-9">
         {links.map((link) => (
           <li key={link.href}>
             <Link
               href={link.href}
-              className="text-xs tracking-widest uppercase text-ink/75 hover:text-ink transition-colors"
+              className="text-[11px] tracking-[0.15em] uppercase text-ink/50 hover:text-ink/90 transition-colors duration-500"
             >
               {link.label}
             </Link>

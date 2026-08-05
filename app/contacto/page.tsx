@@ -10,9 +10,9 @@ export default function ContactoPage() {
   return (
     <>
       <Nav />
-      <section className="pt-40 md:pt-56 px-6 md:px-24 pb-40 min-h-[60vh]">
-        <Reveal className="max-w-[480px] md:ml-[16.6%]">
-          <p className="text-xs tracking-widest uppercase text-muted mb-12">
+      <section className="min-h-screen flex items-center px-6 md:px-28">
+        <Reveal className="max-w-[420px] mx-auto md:mx-0 md:ml-[16.6%]">
+          <p className="text-[11px] tracking-[0.15em] uppercase text-muted mb-14">
             Contacto
           </p>
           <div className="space-y-8">

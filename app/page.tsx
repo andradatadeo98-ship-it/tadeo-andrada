@@ -12,30 +12,33 @@ export default function Home() {
     <>
       <Nav />
 
+      {/* Sala 1: el nombre. Una sola imagen, el nombre aparece después,
+          subordinado. */}
       <Hero />
 
-      <div className="h-[40vh] md:h-[46vh]" />
+      {/* Sala 2: una pausa contemplativa, solo texto, centrado y
+          angosto — no compite con nada más en pantalla. */}
+      <section className="min-h-screen flex items-center justify-center px-6">
+        <Reveal className="max-w-[440px] text-center">
+          <p className="font-serif text-xl md:text-2xl leading-[1.7]">
+            Una práctica sostenida en la tensión entre el orden y el gesto —
+            entre lo que se planifica y lo que sucede en el momento del
+            pincel.
+          </p>
+        </Reveal>
+      </section>
 
-      <Reveal className="max-w-[520px] md:ml-[28%] px-6 md:pr-24">
-        <p className="font-serif text-xl md:text-2xl leading-relaxed">
-          Una práctica sostenida en la tensión entre el orden y el gesto —
-          entre lo que se planifica y lo que sucede en el momento del
-          pincel.
-        </p>
-      </Reveal>
-
-      <div className="h-[22vh] md:h-[28vh]" />
-
-      <section className="px-6 md:px-24" id="obras">
-        <Reveal className="mb-16 md:mb-24 md:ml-[8.3%]">
-          <p className="text-xs tracking-widest uppercase text-muted">
+      {/* Sala 3 en adelante: cada obra destacada es su propia sala,
+          ver ObrasMosaic. Un único cartel de entrada, discreto, antes
+          de la primera. */}
+      <section id="obras">
+        <Reveal className="text-center pb-24 md:pb-32">
+          <p className="text-[11px] tracking-[0.15em] uppercase text-muted">
             Obras recientes
           </p>
         </Reveal>
         <ObrasMosaic obras={destacadas} />
       </section>
-
-      <div className="h-[30vh] md:h-[36vh]" />
 
       <Footer />
     </>

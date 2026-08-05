@@ -17,13 +17,13 @@ export default function Hero() {
       </div>
 
       <div
-        className="absolute bottom-[10vh] left-6 md:left-24 opacity-0 animate-[revealIn_1.2s_cubic-bezier(0.16,1,0.3,1)_0.4s_forwards]"
+        className="absolute bottom-[10vh] left-6 md:left-28 opacity-0 animate-[revealIn_1.4s_cubic-bezier(0.16,1,0.3,1)_0.9s_forwards]"
         style={{ transform: "translateY(16px)" }}
       >
         <h1 className="font-serif text-[30px] md:text-[44px] leading-tight font-normal mb-2">
           Tadeo Andrada
         </h1>
-        <p className="text-[14px] tracking-wide text-muted">
+        <p className="text-[13px] tracking-wide text-muted">
           Artista visual
         </p>
       </div>
