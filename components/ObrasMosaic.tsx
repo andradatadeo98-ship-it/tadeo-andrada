@@ -20,12 +20,12 @@ export default function ObrasMosaic({ obras }: { obras: Obra[] }) {
         return (
           <section
             key={obra.slug}
-            className="min-h-screen flex flex-col items-center justify-center px-6 md:px-16 py-24"
+            className="min-h-screen flex flex-col items-center justify-center px-3 md:px-6 py-16"
           >
             <Reveal className="w-full flex flex-col items-center">
               <Link
                 href={`/obras/${obra.slug}`}
-                className="group block w-[86vw] md:w-[82%] max-w-[1400px]"
+                className="group block w-[95vw] md:w-[92vw] max-w-[1800px]"
               >
                 <div
                   className="relative overflow-hidden bg-[#E4DCCB]"
@@ -39,7 +39,7 @@ export default function ObrasMosaic({ obras }: { obras: Obra[] }) {
                       alt={`${obra.titulo} instalada en sala`}
                       fill
                       className="object-cover transition-opacity duration-[1200ms] ease-reveal group-hover:opacity-0"
-                      sizes="86vw"
+                      sizes="95vw"
                     />
                   )}
                   {obra.imagenes[0] && (
@@ -52,7 +52,7 @@ export default function ObrasMosaic({ obras }: { obras: Obra[] }) {
                           ? "opacity-0 group-hover:opacity-100"
                           : "opacity-100"
                       }`}
-                      sizes="86vw"
+                      sizes="95vw"
                     />
                   )}
                 </div>
